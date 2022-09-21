@@ -1,0 +1,1752 @@
+[2022-09-17 20:17:05,187] INFO [24340-12960] Will watch for changes in these directories: ['C:\\Users\\israa\\Desktop\\Polysis\\app']
+[2022-09-17 20:17:05,188] INFO [24340-12960] Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2022-09-17 20:17:05,191] INFO [24340-12960] Started reloader process [24340] using watchgod
+[2022-09-17 20:17:07,746] WARNING [24136-8576] The --reload flag should not be used in production on Windows.
+[2022-09-17 20:17:07,816] INFO [24136-8576] Started server process [24136]
+[2022-09-17 20:17:07,816] INFO [24136-8576] Waiting for application startup.
+[2022-09-17 20:17:07,817] INFO [24136-8576] Running envirnoment: development
+[2022-09-17 20:17:07,818] INFO [24136-8576] PyTorch using device: cpu
+[2022-09-17 20:17:10,893] INFO [24340-12960] Stopping reloader process [24340]
+[2022-09-17 20:17:33,315] INFO [8352-22604] Will watch for changes in these directories: ['C:\\Users\\israa\\Desktop\\Polysis\\app']
+[2022-09-17 20:17:33,316] INFO [8352-22604] Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2022-09-17 20:17:33,318] INFO [8352-22604] Started reloader process [8352] using watchgod
+[2022-09-17 20:17:35,663] WARNING [23808-18880] The --reload flag should not be used in production on Windows.
+[2022-09-17 20:17:35,708] INFO [23808-18880] Started server process [23808]
+[2022-09-17 20:17:35,709] INFO [23808-18880] Waiting for application startup.
+[2022-09-17 20:17:35,709] INFO [23808-18880] Running envirnoment: development
+[2022-09-17 20:17:35,710] INFO [23808-18880] PyTorch using device: cpu
+[2022-09-17 20:17:38,916] ERROR [23808-18880] Traceback (most recent call last):
+  File "C:\Users\israa\anaconda3\lib\site-packages\starlette\routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "C:\Users\israa\anaconda3\lib\site-packages\starlette\routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "C:\Users\israa\anaconda3\lib\site-packages\starlette\routing.py", line 598, in startup
+    await handler()
+  File "C:\Users\israa\Desktop\Polysis\app\main.py", line 61, in startup_event
+    model = torch.load(open('./BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+FileNotFoundError: [Errno 2] No such file or directory: './BERTSem.pt'
+
+[2022-09-17 20:17:38,918] ERROR [23808-18880] Application startup failed. Exiting.
+[2022-09-17 20:30:49,118] WARNING [8352-22604] WatchGodReload detected file change in '['C:\\Users\\israa\\Desktop\\Polysis\\app\\main.py']'. Reloading...
+[2022-09-17 20:30:51,514] WARNING [1064-24960] The --reload flag should not be used in production on Windows.
+[2022-09-17 20:30:51,559] INFO [1064-24960] Started server process [1064]
+[2022-09-17 20:30:51,560] INFO [1064-24960] Waiting for application startup.
+[2022-09-17 20:30:51,560] INFO [1064-24960] Running envirnoment: development
+[2022-09-17 20:30:51,561] INFO [1064-24960] PyTorch using device: cpu
+[2022-09-17 20:30:54,911] ERROR [1064-24960] Traceback (most recent call last):
+  File "C:\Users\israa\anaconda3\lib\site-packages\starlette\routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "C:\Users\israa\anaconda3\lib\site-packages\starlette\routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "C:\Users\israa\anaconda3\lib\site-packages\starlette\routing.py", line 598, in startup
+    await handler()
+  File "C:\Users\israa\Desktop\Polysis\app\main.py", line 61, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "C:\Users\israa\anaconda3\lib\site-packages\torch\serialization.py", line 607, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "C:\Users\israa\anaconda3\lib\site-packages\torch\serialization.py", line 882, in _load
+    result = unpickler.load()
+  File "C:\Users\israa\anaconda3\lib\site-packages\torch\serialization.py", line 875, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__mp_main__' from 'C:\\Users\\israa\\Desktop\\Polysis\\app\\main.py'>
+
+[2022-09-17 20:30:54,922] ERROR [1064-24960] Application startup failed. Exiting.
+[2022-09-17 20:46:56,328] WARNING [8352-22604] WatchGodReload detected file change in '['C:\\Users\\israa\\Desktop\\Polysis\\app\\BERTSem.py']'. Reloading...
+[2022-09-17 20:47:00,707] WARNING [2204-23664] The --reload flag should not be used in production on Windows.
+[2022-09-17 20:47:00,768] INFO [2204-23664] Started server process [2204]
+[2022-09-17 20:47:00,768] INFO [2204-23664] Waiting for application startup.
+[2022-09-17 20:47:00,769] INFO [2204-23664] Running envirnoment: development
+[2022-09-17 20:47:00,769] INFO [2204-23664] PyTorch using device: cpu
+[2022-09-17 20:47:01,264] WARNING [8352-22604] WatchGodReload detected file change in '['C:\\Users\\israa\\Desktop\\Polysis\\app\\main.py']'. Reloading...
+[2022-09-17 20:47:03,670] WARNING [15796-23228] The --reload flag should not be used in production on Windows.
+[2022-09-17 20:47:03,713] INFO [15796-23228] Started server process [15796]
+[2022-09-17 20:47:03,713] INFO [15796-23228] Waiting for application startup.
+[2022-09-17 20:47:03,714] INFO [15796-23228] Running envirnoment: development
+[2022-09-17 20:47:03,714] INFO [15796-23228] PyTorch using device: cpu
+[2022-09-17 20:47:08,051] INFO [15796-23228] Application startup complete.
+[2022-09-17 20:48:10,534] INFO [15796-23228] Shutting down
+[2022-09-17 20:48:10,651] INFO [15796-23228] Waiting for application shutdown.
+[2022-09-17 20:48:10,651] INFO [15796-23228] Application shutdown complete.
+[2022-09-17 20:48:10,654] INFO [15796-23228] Finished server process [15796]
+[2022-09-17 20:48:10,760] INFO [8352-22604] Stopping reloader process [8352]
+[2022-09-18 08:58:44,703] INFO [7653-139832243758912] Running envirnoment: development
+[2022-09-18 08:58:44,704] INFO [7653-139832243758912] PyTorch using device: cuda
+[2022-09-18 09:06:04,424] INFO [7669-140260447803200] Running envirnoment: development
+[2022-09-18 09:06:04,425] INFO [7669-140260447803200] PyTorch using device: cuda
+[2022-09-18 09:08:00,795] INFO [7680-140492556916544] Will watch for changes in these directories: ['/mnt/c/Users/israa/Desktop/Polysis/app']
+[2022-09-18 09:08:00,796] INFO [7680-140492556916544] Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2022-09-18 09:08:00,797] INFO [7680-140492556916544] Started reloader process [7680] using statreload
+[2022-09-18 09:08:02,588] INFO [7690-139763508373312] Started server process [7690]
+[2022-09-18 09:08:02,589] INFO [7690-139763508373312] Waiting for application startup.
+[2022-09-18 09:08:02,589] INFO [7690-139763508373312] Running envirnoment: development
+[2022-09-18 09:08:02,590] INFO [7690-139763508373312] PyTorch using device: cuda
+[2022-09-18 09:08:13,416] INFO [7690-139763508373312] Application startup complete.
+[2022-09-18 09:08:54,821] INFO [7690-139763508373312] 127.0.0.1:35326 - "GET / HTTP/1.1" 404
+[2022-09-18 09:08:54,973] INFO [7690-139763508373312] 127.0.0.1:35326 - "GET /favicon.ico HTTP/1.1" 404
+[2022-09-18 09:14:19,702] WARNING [7680-140492556916544] StatReload detected file change in 'main.py'. Reloading...
+[2022-09-18 09:14:19,715] INFO [7690-139763508373312] Shutting down
+[2022-09-18 09:14:19,822] INFO [7690-139763508373312] Waiting for application shutdown.
+[2022-09-18 09:14:19,823] INFO [7690-139763508373312] Application shutdown complete.
+[2022-09-18 09:14:19,823] INFO [7690-139763508373312] Finished server process [7690]
+[2022-09-18 09:14:23,051] INFO [7699-140146086987584] Started server process [7699]
+[2022-09-18 09:14:23,051] INFO [7699-140146086987584] Waiting for application startup.
+[2022-09-18 09:14:23,052] INFO [7699-140146086987584] Running envirnoment: development
+[2022-09-18 09:14:23,053] INFO [7699-140146086987584] PyTorch using device: cuda
+[2022-09-18 09:14:28,111] INFO [7699-140146086987584] Application startup complete.
+[2022-09-18 09:14:47,748] INFO [7699-140146086987584] 127.0.0.1:35334 - "GET / HTTP/1.1" 200
+[2022-09-18 09:15:01,935] INFO [7699-140146086987584] Shutting down
+[2022-09-18 09:15:02,038] INFO [7699-140146086987584] Finished server process [7699]
+[2022-09-18 09:15:02,040] ERROR [7699-140146086987584] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 624, in lifespan
+    await receive()
+  File "/home/israa04/.local/lib/python3.8/site-packages/uvicorn/middleware/message_logger.py", line 58, in inner_receive
+    message = await receive()
+  File "/home/israa04/.local/lib/python3.8/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/usr/lib/python3.8/asyncio/queues.py", line 163, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+[2022-09-18 09:15:02,753] INFO [7680-140492556916544] Stopping reloader process [7680]
+[2022-09-18 09:15:24,516] INFO [7713-139669841717056] Started server process [7713]
+[2022-09-18 09:15:24,517] INFO [7713-139669841717056] Waiting for application startup.
+[2022-09-18 09:15:24,517] INFO [7713-139669841717056] Running envirnoment: development
+[2022-09-18 09:15:24,518] INFO [7713-139669841717056] PyTorch using device: cuda
+[2022-09-18 09:15:24,532] INFO [7712-139669841717056] Started server process [7712]
+[2022-09-18 09:15:24,533] INFO [7712-139669841717056] Waiting for application startup.
+[2022-09-18 09:15:24,534] INFO [7712-139669841717056] Running envirnoment: development
+[2022-09-18 09:15:24,534] INFO [7712-139669841717056] PyTorch using device: cuda
+[2022-09-18 09:15:25,430] ERROR [7713-139669841717056] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:15:25,435] ERROR [7713-139669841717056] Application startup failed. Exiting.
+[2022-09-18 09:15:25,440] ERROR [7712-139669841717056] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:15:25,448] ERROR [7712-139669841717056] Application startup failed. Exiting.
+[2022-09-18 09:15:28,206] INFO [7730-139669841717056] Started server process [7730]
+[2022-09-18 09:15:28,212] INFO [7730-139669841717056] Waiting for application startup.
+[2022-09-18 09:15:28,214] INFO [7730-139669841717056] Running envirnoment: development
+[2022-09-18 09:15:28,215] INFO [7730-139669841717056] PyTorch using device: cuda
+[2022-09-18 09:15:28,227] INFO [7738-139669841717056] Started server process [7738]
+[2022-09-18 09:15:28,229] INFO [7738-139669841717056] Waiting for application startup.
+[2022-09-18 09:15:28,231] INFO [7738-139669841717056] Running envirnoment: development
+[2022-09-18 09:15:28,232] INFO [7738-139669841717056] PyTorch using device: cuda
+[2022-09-18 09:15:29,128] ERROR [7730-139669841717056] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:15:29,134] ERROR [7730-139669841717056] Application startup failed. Exiting.
+[2022-09-18 09:15:29,270] ERROR [7738-139669841717056] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:15:29,275] ERROR [7738-139669841717056] Application startup failed. Exiting.
+[2022-09-18 09:15:32,131] INFO [7748-139669841717056] Started server process [7748]
+[2022-09-18 09:15:32,132] INFO [7748-139669841717056] Waiting for application startup.
+[2022-09-18 09:15:32,133] INFO [7748-139669841717056] Running envirnoment: development
+[2022-09-18 09:15:32,133] INFO [7748-139669841717056] PyTorch using device: cuda
+[2022-09-18 09:15:32,134] INFO [7749-139669841717056] Started server process [7749]
+[2022-09-18 09:15:32,135] INFO [7749-139669841717056] Waiting for application startup.
+[2022-09-18 09:15:32,136] INFO [7749-139669841717056] Running envirnoment: development
+[2022-09-18 09:15:32,136] INFO [7749-139669841717056] PyTorch using device: cuda
+[2022-09-18 09:15:32,972] ERROR [7748-139669841717056] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:15:32,972] ERROR [7749-139669841717056] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:15:32,980] ERROR [7748-139669841717056] Application startup failed. Exiting.
+[2022-09-18 09:15:32,984] ERROR [7749-139669841717056] Application startup failed. Exiting.
+[2022-09-18 09:20:21,183] INFO [7768-140695914641216] Started server process [7768]
+[2022-09-18 09:20:21,184] INFO [7768-140695914641216] Waiting for application startup.
+[2022-09-18 09:20:21,185] INFO [7768-140695914641216] Running envirnoment: development
+[2022-09-18 09:20:21,187] INFO [7768-140695914641216] PyTorch using device: cuda
+[2022-09-18 09:20:21,200] INFO [7776-140695914641216] Started server process [7776]
+[2022-09-18 09:20:21,201] INFO [7776-140695914641216] Waiting for application startup.
+[2022-09-18 09:20:21,203] INFO [7776-140695914641216] Running envirnoment: development
+[2022-09-18 09:20:21,204] INFO [7776-140695914641216] PyTorch using device: cuda
+[2022-09-18 09:20:22,088] ERROR [7768-140695914641216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:20:22,093] ERROR [7768-140695914641216] Application startup failed. Exiting.
+[2022-09-18 09:20:22,124] ERROR [7776-140695914641216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:20:22,130] ERROR [7776-140695914641216] Application startup failed. Exiting.
+[2022-09-18 09:20:24,835] INFO [7786-140695914641216] Started server process [7786]
+[2022-09-18 09:20:24,836] INFO [7786-140695914641216] Waiting for application startup.
+[2022-09-18 09:20:24,837] INFO [7786-140695914641216] Running envirnoment: development
+[2022-09-18 09:20:24,838] INFO [7786-140695914641216] PyTorch using device: cuda
+[2022-09-18 09:20:24,854] INFO [7787-140695914641216] Started server process [7787]
+[2022-09-18 09:20:24,855] INFO [7787-140695914641216] Waiting for application startup.
+[2022-09-18 09:20:24,856] INFO [7787-140695914641216] Running envirnoment: development
+[2022-09-18 09:20:24,856] INFO [7787-140695914641216] PyTorch using device: cuda
+[2022-09-18 09:20:25,562] ERROR [7786-140695914641216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:20:25,568] ERROR [7787-140695914641216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:20:25,568] ERROR [7786-140695914641216] Application startup failed. Exiting.
+[2022-09-18 09:20:25,577] ERROR [7787-140695914641216] Application startup failed. Exiting.
+[2022-09-18 09:20:28,318] INFO [7804-140695914641216] Started server process [7804]
+[2022-09-18 09:20:28,319] INFO [7804-140695914641216] Waiting for application startup.
+[2022-09-18 09:20:28,320] INFO [7804-140695914641216] Running envirnoment: development
+[2022-09-18 09:20:28,320] INFO [7804-140695914641216] PyTorch using device: cuda
+[2022-09-18 09:20:28,331] INFO [7812-140695914641216] Started server process [7812]
+[2022-09-18 09:20:28,332] INFO [7812-140695914641216] Waiting for application startup.
+[2022-09-18 09:20:28,333] INFO [7812-140695914641216] Running envirnoment: development
+[2022-09-18 09:20:28,333] INFO [7812-140695914641216] PyTorch using device: cuda
+[2022-09-18 09:20:29,067] ERROR [7804-140695914641216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:20:29,073] ERROR [7804-140695914641216] Application startup failed. Exiting.
+[2022-09-18 09:20:29,158] ERROR [7812-140695914641216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:20:29,169] ERROR [7812-140695914641216] Application startup failed. Exiting.
+[2022-09-18 09:20:31,770] INFO [7823-140695914641216] Started server process [7823]
+[2022-09-18 09:20:31,771] INFO [7823-140695914641216] Waiting for application startup.
+[2022-09-18 09:20:31,772] INFO [7823-140695914641216] Running envirnoment: development
+[2022-09-18 09:20:31,772] INFO [7822-140695914641216] Started server process [7822]
+[2022-09-18 09:20:31,773] INFO [7823-140695914641216] PyTorch using device: cuda
+[2022-09-18 09:20:31,775] INFO [7822-140695914641216] Waiting for application startup.
+[2022-09-18 09:20:31,781] INFO [7822-140695914641216] Running envirnoment: development
+[2022-09-18 09:20:31,783] INFO [7822-140695914641216] PyTorch using device: cuda
+[2022-09-18 09:20:32,525] ERROR [7822-140695914641216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:20:32,530] ERROR [7822-140695914641216] Application startup failed. Exiting.
+[2022-09-18 09:20:32,580] ERROR [7823-140695914641216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:20:32,600] ERROR [7823-140695914641216] Application startup failed. Exiting.
+[2022-09-18 09:25:20,167] INFO [7842-139803256403776] Started server process [7842]
+[2022-09-18 09:25:20,168] INFO [7842-139803256403776] Waiting for application startup.
+[2022-09-18 09:25:20,171] INFO [7842-139803256403776] Running envirnoment: development
+[2022-09-18 09:25:20,174] INFO [7842-139803256403776] PyTorch using device: cuda
+[2022-09-18 09:25:20,177] INFO [7850-139803256403776] Started server process [7850]
+[2022-09-18 09:25:20,179] INFO [7850-139803256403776] Waiting for application startup.
+[2022-09-18 09:25:20,181] INFO [7850-139803256403776] Running envirnoment: development
+[2022-09-18 09:25:20,181] INFO [7850-139803256403776] PyTorch using device: cuda
+[2022-09-18 09:25:21,095] ERROR [7842-139803256403776] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('./BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:25:21,097] ERROR [7850-139803256403776] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('./BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:25:21,100] ERROR [7842-139803256403776] Application startup failed. Exiting.
+[2022-09-18 09:25:21,103] ERROR [7850-139803256403776] Application startup failed. Exiting.
+[2022-09-18 09:25:24,067] INFO [7860-139803256403776] Started server process [7860]
+[2022-09-18 09:25:24,068] INFO [7860-139803256403776] Waiting for application startup.
+[2022-09-18 09:25:24,071] INFO [7860-139803256403776] Running envirnoment: development
+[2022-09-18 09:25:24,073] INFO [7860-139803256403776] PyTorch using device: cuda
+[2022-09-18 09:25:24,100] INFO [7861-139803256403776] Started server process [7861]
+[2022-09-18 09:25:24,100] INFO [7861-139803256403776] Waiting for application startup.
+[2022-09-18 09:25:24,101] INFO [7861-139803256403776] Running envirnoment: development
+[2022-09-18 09:25:24,102] INFO [7861-139803256403776] PyTorch using device: cuda
+[2022-09-18 09:25:24,874] ERROR [7860-139803256403776] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('./BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:25:24,880] ERROR [7860-139803256403776] Application startup failed. Exiting.
+[2022-09-18 09:25:24,886] ERROR [7861-139803256403776] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('./BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:25:24,893] ERROR [7861-139803256403776] Application startup failed. Exiting.
+[2022-09-18 09:25:27,841] INFO [7879-139803256403776] Started server process [7879]
+[2022-09-18 09:25:27,841] INFO [7879-139803256403776] Waiting for application startup.
+[2022-09-18 09:25:27,842] INFO [7879-139803256403776] Running envirnoment: development
+[2022-09-18 09:25:27,843] INFO [7879-139803256403776] PyTorch using device: cuda
+[2022-09-18 09:25:27,864] INFO [7878-139803256403776] Started server process [7878]
+[2022-09-18 09:25:27,865] INFO [7878-139803256403776] Waiting for application startup.
+[2022-09-18 09:25:27,866] INFO [7878-139803256403776] Running envirnoment: development
+[2022-09-18 09:25:27,866] INFO [7878-139803256403776] PyTorch using device: cuda
+[2022-09-18 09:25:28,550] ERROR [7879-139803256403776] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('./BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:25:28,563] ERROR [7879-139803256403776] Application startup failed. Exiting.
+[2022-09-18 09:25:28,654] ERROR [7878-139803256403776] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('./BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:25:28,661] ERROR [7878-139803256403776] Application startup failed. Exiting.
+[2022-09-18 09:26:15,585] INFO [7899-140309468247872] Running envirnoment: development
+[2022-09-18 09:26:15,586] INFO [7899-140309468247872] PyTorch using device: cuda
+[2022-09-18 09:27:56,541] INFO [7908-140217452906304] Will watch for changes in these directories: ['/mnt/c/Users/israa/Desktop/Polysis/app']
+[2022-09-18 09:27:56,542] INFO [7908-140217452906304] Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2022-09-18 09:27:56,543] INFO [7908-140217452906304] Started reloader process [7908] using statreload
+[2022-09-18 09:27:58,679] INFO [7918-139686097803072] Started server process [7918]
+[2022-09-18 09:27:58,681] INFO [7918-139686097803072] Waiting for application startup.
+[2022-09-18 09:27:58,683] INFO [7918-139686097803072] Running envirnoment: development
+[2022-09-18 09:27:58,684] INFO [7918-139686097803072] PyTorch using device: cuda
+[2022-09-18 09:27:59,629] ERROR [7918-139686097803072] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('./BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+FileNotFoundError: [Errno 2] No such file or directory: './BERTSem.pt'
+
+[2022-09-18 09:27:59,635] ERROR [7918-139686097803072] Application startup failed. Exiting.
+[2022-09-18 09:28:13,640] WARNING [7908-140217452906304] StatReload detected file change in 'main.py'. Reloading...
+[2022-09-18 09:28:16,269] INFO [7927-140293369542464] Started server process [7927]
+[2022-09-18 09:28:16,270] INFO [7927-140293369542464] Waiting for application startup.
+[2022-09-18 09:28:16,271] INFO [7927-140293369542464] Running envirnoment: development
+[2022-09-18 09:28:16,271] INFO [7927-140293369542464] PyTorch using device: cuda
+[2022-09-18 09:28:24,303] INFO [7927-140293369542464] Application startup complete.
+[2022-09-18 09:28:29,631] INFO [7927-140293369542464] Shutting down
+[2022-09-18 09:28:29,733] INFO [7927-140293369542464] Finished server process [7927]
+[2022-09-18 09:28:29,737] ERROR [7927-140293369542464] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 624, in lifespan
+    await receive()
+  File "/home/israa04/.local/lib/python3.8/site-packages/uvicorn/middleware/message_logger.py", line 58, in inner_receive
+    message = await receive()
+  File "/home/israa04/.local/lib/python3.8/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/usr/lib/python3.8/asyncio/queues.py", line 163, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+[2022-09-18 09:28:30,418] INFO [7908-140217452906304] Stopping reloader process [7908]
+[2022-09-18 09:28:36,348] INFO [7939-140282940266304] Running envirnoment: development
+[2022-09-18 09:28:36,349] INFO [7939-140282940266304] PyTorch using device: cuda
+[2022-09-18 09:30:06,895] INFO [7948-139642987251520] Will watch for changes in these directories: ['/mnt/c/Users/israa/Desktop/Polysis/app']
+[2022-09-18 09:30:06,895] INFO [7948-139642987251520] Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2022-09-18 09:30:06,897] INFO [7948-139642987251520] Started reloader process [7948] using statreload
+[2022-09-18 09:30:09,837] INFO [7958-140030970861376] Started server process [7958]
+[2022-09-18 09:30:09,838] INFO [7958-140030970861376] Waiting for application startup.
+[2022-09-18 09:30:09,841] INFO [7958-140030970861376] Running envirnoment: development
+[2022-09-18 09:30:09,843] INFO [7958-140030970861376] PyTorch using device: cuda
+[2022-09-18 09:30:17,538] INFO [7958-140030970861376] Application startup complete.
+[2022-09-18 09:32:10,581] INFO [7958-140030970861376] Shutting down
+[2022-09-18 09:32:10,683] INFO [7958-140030970861376] Finished server process [7958]
+[2022-09-18 09:32:10,687] ERROR [7958-140030970861376] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 624, in lifespan
+    await receive()
+  File "/home/israa04/.local/lib/python3.8/site-packages/uvicorn/middleware/message_logger.py", line 58, in inner_receive
+    message = await receive()
+  File "/home/israa04/.local/lib/python3.8/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/usr/lib/python3.8/asyncio/queues.py", line 163, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+[2022-09-18 09:32:11,503] INFO [7948-139642987251520] Stopping reloader process [7948]
+[2022-09-18 09:32:20,981] INFO [7974-140416131721024] Started server process [7974]
+[2022-09-18 09:32:20,982] INFO [7974-140416131721024] Waiting for application startup.
+[2022-09-18 09:32:20,983] INFO [7974-140416131721024] Running envirnoment: development
+[2022-09-18 09:32:20,983] INFO [7974-140416131721024] PyTorch using device: cuda
+[2022-09-18 09:32:20,995] INFO [7969-140416131721024] Started server process [7969]
+[2022-09-18 09:32:20,995] INFO [7969-140416131721024] Waiting for application startup.
+[2022-09-18 09:32:20,996] INFO [7969-140416131721024] Running envirnoment: development
+[2022-09-18 09:32:20,997] INFO [7969-140416131721024] PyTorch using device: cuda
+[2022-09-18 09:32:21,867] ERROR [7974-140416131721024] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:32:21,871] ERROR [7974-140416131721024] Application startup failed. Exiting.
+[2022-09-18 09:32:21,883] ERROR [7969-140416131721024] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:32:21,888] ERROR [7969-140416131721024] Application startup failed. Exiting.
+[2022-09-18 09:32:24,664] INFO [7995-140416131721024] Started server process [7995]
+[2022-09-18 09:32:24,665] INFO [7995-140416131721024] Waiting for application startup.
+[2022-09-18 09:32:24,665] INFO [7995-140416131721024] Running envirnoment: development
+[2022-09-18 09:32:24,666] INFO [7995-140416131721024] PyTorch using device: cuda
+[2022-09-18 09:32:24,674] INFO [7987-140416131721024] Started server process [7987]
+[2022-09-18 09:32:24,675] INFO [7987-140416131721024] Waiting for application startup.
+[2022-09-18 09:32:24,676] INFO [7987-140416131721024] Running envirnoment: development
+[2022-09-18 09:32:24,677] INFO [7987-140416131721024] PyTorch using device: cuda
+[2022-09-18 09:32:25,345] ERROR [7987-140416131721024] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:32:25,354] ERROR [7987-140416131721024] Application startup failed. Exiting.
+[2022-09-18 09:32:25,420] ERROR [7995-140416131721024] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:32:25,429] ERROR [7995-140416131721024] Application startup failed. Exiting.
+[2022-09-18 09:32:38,375] INFO [8008-140436713105216] Started server process [8008]
+[2022-09-18 09:32:38,375] INFO [8008-140436713105216] Waiting for application startup.
+[2022-09-18 09:32:38,376] INFO [8008-140436713105216] Running envirnoment: development
+[2022-09-18 09:32:38,377] INFO [8008-140436713105216] PyTorch using device: cuda
+[2022-09-18 09:32:38,377] INFO [8007-140436713105216] Started server process [8007]
+[2022-09-18 09:32:38,379] INFO [8007-140436713105216] Waiting for application startup.
+[2022-09-18 09:32:38,382] INFO [8007-140436713105216] Running envirnoment: development
+[2022-09-18 09:32:38,384] INFO [8007-140436713105216] PyTorch using device: cuda
+[2022-09-18 09:32:39,222] ERROR [8007-140436713105216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:32:39,229] ERROR [8007-140436713105216] Application startup failed. Exiting.
+[2022-09-18 09:32:39,236] ERROR [8008-140436713105216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:32:39,249] ERROR [8008-140436713105216] Application startup failed. Exiting.
+[2022-09-18 09:32:42,254] INFO [8025-140436713105216] Started server process [8025]
+[2022-09-18 09:32:42,255] INFO [8025-140436713105216] Waiting for application startup.
+[2022-09-18 09:32:42,256] INFO [8025-140436713105216] Running envirnoment: development
+[2022-09-18 09:32:42,258] INFO [8025-140436713105216] PyTorch using device: cuda
+[2022-09-18 09:32:42,267] INFO [8033-140436713105216] Started server process [8033]
+[2022-09-18 09:32:42,267] INFO [8033-140436713105216] Waiting for application startup.
+[2022-09-18 09:32:42,268] INFO [8033-140436713105216] Running envirnoment: development
+[2022-09-18 09:32:42,270] INFO [8033-140436713105216] PyTorch using device: cuda
+[2022-09-18 09:32:42,999] ERROR [8033-140436713105216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:32:43,007] ERROR [8033-140436713105216] Application startup failed. Exiting.
+[2022-09-18 09:32:43,029] ERROR [8025-140436713105216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:32:43,033] ERROR [8025-140436713105216] Application startup failed. Exiting.
+[2022-09-18 09:32:46,138] INFO [8043-140436713105216] Started server process [8043]
+[2022-09-18 09:32:46,138] INFO [8043-140436713105216] Waiting for application startup.
+[2022-09-18 09:32:46,139] INFO [8043-140436713105216] Running envirnoment: development
+[2022-09-18 09:32:46,140] INFO [8043-140436713105216] PyTorch using device: cuda
+[2022-09-18 09:32:46,165] INFO [8051-140436713105216] Started server process [8051]
+[2022-09-18 09:32:46,165] INFO [8051-140436713105216] Waiting for application startup.
+[2022-09-18 09:32:46,166] INFO [8051-140436713105216] Running envirnoment: development
+[2022-09-18 09:32:46,166] INFO [8051-140436713105216] PyTorch using device: cuda
+[2022-09-18 09:32:46,902] ERROR [8043-140436713105216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:32:46,908] ERROR [8043-140436713105216] Application startup failed. Exiting.
+[2022-09-18 09:32:46,915] ERROR [8051-140436713105216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:32:46,923] ERROR [8051-140436713105216] Application startup failed. Exiting.
+[2022-09-18 09:33:39,213] INFO [8064-140526658705216] Started server process [8064]
+[2022-09-18 09:33:39,215] INFO [8064-140526658705216] Waiting for application startup.
+[2022-09-18 09:33:39,216] INFO [8064-140526658705216] Running envirnoment: development
+[2022-09-18 09:33:39,217] INFO [8064-140526658705216] PyTorch using device: cuda
+[2022-09-18 09:33:39,237] INFO [8063-140526658705216] Started server process [8063]
+[2022-09-18 09:33:39,239] INFO [8063-140526658705216] Waiting for application startup.
+[2022-09-18 09:33:39,241] INFO [8063-140526658705216] Running envirnoment: development
+[2022-09-18 09:33:39,242] INFO [8063-140526658705216] PyTorch using device: cuda
+[2022-09-18 09:33:40,096] ERROR [8063-140526658705216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:33:40,102] ERROR [8063-140526658705216] Application startup failed. Exiting.
+[2022-09-18 09:33:40,152] ERROR [8064-140526658705216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:33:40,157] ERROR [8064-140526658705216] Application startup failed. Exiting.
+[2022-09-18 09:33:43,137] INFO [8081-140526658705216] Started server process [8081]
+[2022-09-18 09:33:43,138] INFO [8081-140526658705216] Waiting for application startup.
+[2022-09-18 09:33:43,139] INFO [8081-140526658705216] Running envirnoment: development
+[2022-09-18 09:33:43,140] INFO [8081-140526658705216] PyTorch using device: cuda
+[2022-09-18 09:33:43,149] INFO [8089-140526658705216] Started server process [8089]
+[2022-09-18 09:33:43,150] INFO [8089-140526658705216] Waiting for application startup.
+[2022-09-18 09:33:43,151] INFO [8089-140526658705216] Running envirnoment: development
+[2022-09-18 09:33:43,152] INFO [8089-140526658705216] PyTorch using device: cuda
+[2022-09-18 09:33:43,884] ERROR [8081-140526658705216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:33:43,889] ERROR [8081-140526658705216] Application startup failed. Exiting.
+[2022-09-18 09:33:43,942] ERROR [8089-140526658705216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:33:43,948] ERROR [8089-140526658705216] Application startup failed. Exiting.
+[2022-09-18 09:33:46,579] INFO [8099-140526658705216] Started server process [8099]
+[2022-09-18 09:33:46,581] INFO [8099-140526658705216] Waiting for application startup.
+[2022-09-18 09:33:46,582] INFO [8099-140526658705216] Running envirnoment: development
+[2022-09-18 09:33:46,584] INFO [8099-140526658705216] PyTorch using device: cuda
+[2022-09-18 09:33:46,584] INFO [8107-140526658705216] Started server process [8107]
+[2022-09-18 09:33:46,586] INFO [8107-140526658705216] Waiting for application startup.
+[2022-09-18 09:33:46,590] INFO [8107-140526658705216] Running envirnoment: development
+[2022-09-18 09:33:46,591] INFO [8107-140526658705216] PyTorch using device: cuda
+[2022-09-18 09:33:47,469] ERROR [8099-140526658705216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:33:47,469] ERROR [8107-140526658705216] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' from '/usr/bin/gunicorn'>
+
+[2022-09-18 09:33:47,475] ERROR [8107-140526658705216] Application startup failed. Exiting.
+[2022-09-18 09:33:47,475] ERROR [8099-140526658705216] Application startup failed. Exiting.
+[2022-09-18 09:42:23,207] INFO [8120-139710140135232] Running envirnoment: development
+[2022-09-18 09:42:23,208] INFO [8120-139710140135232] PyTorch using device: cuda
+[2022-09-18 09:47:44,927] INFO [8154-140589793871680] Running envirnoment: development
+[2022-09-18 09:47:44,928] INFO [8154-140589793871680] PyTorch using device: cuda
+[2022-09-18 09:51:19,902] INFO [8163-139854702593856] Will watch for changes in these directories: ['/mnt/c/Users/israa/Desktop/Polysis/app']
+[2022-09-18 09:51:19,902] INFO [8163-139854702593856] Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+[2022-09-18 09:51:19,903] INFO [8163-139854702593856] Started reloader process [8163] using statreload
+[2022-09-18 09:51:23,637] INFO [8165-140597379962688] Started server process [8165]
+[2022-09-18 09:51:23,638] INFO [8165-140597379962688] Waiting for application startup.
+[2022-09-18 09:51:23,638] INFO [8165-140597379962688] Running envirnoment: development
+[2022-09-18 09:51:23,639] INFO [8165-140597379962688] PyTorch using device: cuda
+[2022-09-18 09:51:24,578] ERROR [8165-140597379962688] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/./main.py", line 62, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' (built-in)>
+
+[2022-09-18 09:51:24,586] ERROR [8165-140597379962688] Application startup failed. Exiting.
+[2022-09-18 09:55:51,424] WARNING [8163-139854702593856] StatReload detected file change in 'main.py'. Reloading...
+[2022-09-18 09:55:54,612] INFO [8174-139813417916224] Started server process [8174]
+[2022-09-18 09:55:54,613] INFO [8174-139813417916224] Waiting for application startup.
+[2022-09-18 09:55:54,614] INFO [8174-139813417916224] Running envirnoment: development
+[2022-09-18 09:55:54,614] INFO [8174-139813417916224] PyTorch using device: cuda
+[2022-09-18 10:01:22,454] ERROR [8174-139813417916224] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/./main.py", line 63, in startup_event
+    model = torch.load(open('../model/BERTSem.pt', 'rb'), map_location=torch.device('cpu'))
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 1042, in find_class
+    return super().find_class(mod_name, name)
+AttributeError: Can't get attribute 'BERTSem' on <module '__main__' (built-in)>
+
+[2022-09-18 10:01:22,473] ERROR [8174-139813417916224] Application startup failed. Exiting.
+[2022-09-18 10:01:38,617] INFO [8163-139854702593856] Stopping reloader process [8163]
+[2022-09-18 12:40:14,830] INFO [8187-139772183308096] Will watch for changes in these directories: ['/mnt/c/Users/israa/Desktop/Polysis/app']
+[2022-09-18 12:40:14,832] INFO [8187-139772183308096] Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+[2022-09-18 12:40:14,833] INFO [8187-139772183308096] Started reloader process [8187] using statreload
+[2022-09-18 12:40:17,416] INFO [8189-140280648025920] Started server process [8189]
+[2022-09-18 12:40:17,416] INFO [8189-140280648025920] Waiting for application startup.
+[2022-09-18 12:40:17,417] INFO [8189-140280648025920] Running envirnoment: development
+[2022-09-18 12:40:17,417] INFO [8189-140280648025920] PyTorch using device: cuda
+[2022-09-18 12:40:25,033] INFO [8189-140280648025920] Application startup complete.
+[2022-09-18 12:40:40,399] INFO [8189-140280648025920] 127.0.0.1:35440 - "GET / HTTP/1.1" 200
+[2022-09-18 12:40:45,646] INFO [8189-140280648025920] Shutting down
+[2022-09-18 12:40:45,749] INFO [8189-140280648025920] Finished server process [8189]
+[2022-09-18 12:40:45,751] ERROR [8189-140280648025920] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 624, in lifespan
+    await receive()
+  File "/home/israa04/.local/lib/python3.8/site-packages/uvicorn/middleware/message_logger.py", line 58, in inner_receive
+    message = await receive()
+  File "/home/israa04/.local/lib/python3.8/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/usr/lib/python3.8/asyncio/queues.py", line 163, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+[2022-09-18 12:40:46,519] INFO [8187-139772183308096] Stopping reloader process [8187]
+[2022-09-18 12:40:51,319] INFO [8205-140343090857792] Running envirnoment: development
+[2022-09-18 12:40:51,320] INFO [8205-140343090857792] PyTorch using device: cuda
+[2022-09-18 12:41:19,289] INFO [8205-140343090857792] 127.0.0.1:35450 - "GET / HTTP/1.1" 200
+[2022-09-18 12:41:20,450] INFO [8205-140343090857792] 127.0.0.1:35450 - "GET / HTTP/1.1" 200
+[2022-09-18 12:41:21,254] INFO [8205-140343090857792] 127.0.0.1:35450 - "GET / HTTP/1.1" 200
+[2022-09-18 12:41:32,365] INFO [8220-140326023513920] Started server process [8220]
+[2022-09-18 12:41:32,366] INFO [8228-140326023513920] Started server process [8228]
+[2022-09-18 12:41:32,366] INFO [8220-140326023513920] Waiting for application startup.
+[2022-09-18 12:41:32,366] INFO [8228-140326023513920] Waiting for application startup.
+[2022-09-18 12:41:32,368] INFO [8228-140326023513920] Running envirnoment: development
+[2022-09-18 12:41:32,368] INFO [8228-140326023513920] PyTorch using device: cuda
+[2022-09-18 12:41:32,369] INFO [8220-140326023513920] Running envirnoment: development
+[2022-09-18 12:41:32,370] INFO [8220-140326023513920] PyTorch using device: cuda
+[2022-09-18 12:41:37,321] INFO [8220-140326023513920] Application startup complete.
+[2022-09-18 12:41:37,390] INFO [8228-140326023513920] Application startup complete.
+[2022-09-18 12:41:42,995] INFO [8228-140326023513920] 127.0.0.1:35464 - "GET / HTTP/1.1" 200
+[2022-09-18 12:41:43,316] INFO [8228-140326023513920] 127.0.0.1:35464 - "GET / HTTP/1.1" 200
+[2022-09-18 12:41:44,108] INFO [8228-140326023513920] 127.0.0.1:35464 - "GET / HTTP/1.1" 200
+[2022-09-18 12:48:25,477] INFO [8228-140326023513920] 127.0.0.1:35470 - "GET /docs HTTP/1.1" 200
+[2022-09-18 12:48:26,395] INFO [8228-140326023513920] 127.0.0.1:35470 - "GET /openapi.json HTTP/1.1" 200
+[2022-09-18 12:49:16,657] INFO [8220-140326023513920] 127.0.0.1:35472 - "POST /api/v1/predict HTTP/1.1" 422
+[2022-09-18 12:49:56,802] INFO [8228-140326023513920] 127.0.0.1:35476 - "POST /api/v1/predict HTTP/1.1" 422
+[2022-09-18 12:50:24,649] INFO [8228-140324168222464] API predict called
+[2022-09-18 12:50:24,649] INFO [8228-140324168222464] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions, ie. success fees.  Apparently, this may have started due to rumors that the London Receiver is allowing for such payments--for example, the pending Arcos turbine sale.  This is unsubstantiated, but may be worthy of inquiry.  Accordingly, in at least one domestic example, it is my understanding that the deal team was fairly unmotivated until they heard about the London arrangement and are now pursuing with great exuberance.  Maybe this is a good thing, but clearly an arrangement that needs to be vetted and then communicated so people understand what the rules may be.'
+[2022-09-18 12:50:24,650] ERROR [8228-140326023513920] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://localhost:8080/api/v1/predict",
+    "headers": "Headers({'host': 'localhost:8080', 'connection': 'keep-alive', 'content-length': '743', 'sec-ch-ua': '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"Windows\"', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2022-09-18 12:50:24,677] INFO [8228-140326023513920] 127.0.0.1:35478 - "POST /api/v1/predict HTTP/1.1" 500
+[2022-09-18 12:50:24,678] ERROR [8228-140326023513920] Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 385, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/lib/python3/dist-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 91, in do_predict
+    score = predict(app.package, text)
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/predict.py", line 54, in predict
+    data_loader = preprocess(text)
+TypeError: preprocess() missing 1 required positional argument: 'text'
+[2022-09-18 12:50:48,992] INFO [8228-140324168222464] API predict called
+[2022-09-18 12:50:48,993] INFO [8228-140324168222464] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions.'
+[2022-09-18 12:50:48,994] ERROR [8228-140326023513920] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://localhost:8080/api/v1/predict",
+    "headers": "Headers({'host': 'localhost:8080', 'connection': 'keep-alive', 'content-length': '170', 'sec-ch-ua': '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"Windows\"', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2022-09-18 12:50:49,000] INFO [8228-140326023513920] 127.0.0.1:35480 - "POST /api/v1/predict HTTP/1.1" 500
+[2022-09-18 12:50:49,001] ERROR [8228-140326023513920] Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 385, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/lib/python3/dist-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 91, in do_predict
+    score = predict(app.package, text)
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/predict.py", line 54, in predict
+    data_loader = preprocess(text)
+TypeError: preprocess() missing 1 required positional argument: 'text'
+[2022-09-18 12:52:29,135] INFO [8228-140324168222464] API predict called
+[2022-09-18 12:52:29,136] INFO [8228-140324168222464] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions.'
+[2022-09-18 12:52:29,137] ERROR [8228-140326023513920] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://localhost:8080/api/v1/predict",
+    "headers": "Headers({'host': 'localhost:8080', 'connection': 'keep-alive', 'content-length': '170', 'sec-ch-ua': '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"Windows\"', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2022-09-18 12:52:29,145] INFO [8228-140326023513920] 127.0.0.1:35484 - "POST /api/v1/predict HTTP/1.1" 500
+[2022-09-18 12:52:29,146] ERROR [8228-140326023513920] Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 385, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/lib/python3/dist-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 91, in do_predict
+    score = predict(app.package, text)
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/predict.py", line 54, in predict
+    data_loader = preprocess(package, text)
+TypeError: preprocess() missing 1 required positional argument: 'text'
+[2022-09-18 13:06:34,669] INFO [8228-140324168222464] API predict called
+[2022-09-18 13:06:34,670] INFO [8228-140324168222464] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions.'
+[2022-09-18 13:06:34,674] ERROR [8228-140326023513920] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://localhost:8080/api/v1/predict",
+    "headers": "Headers({'host': 'localhost:8080', 'connection': 'keep-alive', 'content-length': '170', 'sec-ch-ua': '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"Windows\"', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2022-09-18 13:06:34,707] INFO [8228-140326023513920] 127.0.0.1:35488 - "POST /api/v1/predict HTTP/1.1" 500
+[2022-09-18 13:06:34,708] ERROR [8228-140326023513920] Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 385, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/lib/python3/dist-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 91, in do_predict
+    # run model inference
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/predict.py", line 54, in predict
+    def predict(package: dict, text: str) -> str:
+TypeError: preprocess() missing 1 required positional argument: 'text'
+[2022-09-18 13:08:04,543] INFO [8220-140324187019008] API predict called
+[2022-09-18 13:08:04,545] INFO [8220-140324187019008] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions.'
+[2022-09-18 13:08:04,547] ERROR [8220-140326023513920] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://localhost:8080/api/v1/predict",
+    "headers": "Headers({'host': 'localhost:8080', 'connection': 'keep-alive', 'content-length': '170', 'sec-ch-ua': '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"Windows\"', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2022-09-18 13:08:04,586] INFO [8220-140326023513920] 127.0.0.1:35492 - "POST /api/v1/predict HTTP/1.1" 500
+[2022-09-18 13:08:04,587] ERROR [8220-140326023513920] Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 385, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/lib/python3/dist-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 91, in do_predict
+    # run model inference
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/predict.py", line 54, in predict
+    def predict(package: dict, text: str) -> str:
+TypeError: preprocess() missing 1 required positional argument: 'text'
+[2022-09-18 13:09:37,365] INFO [8228-140324168222464] API predict called
+[2022-09-18 13:09:37,365] INFO [8228-140324168222464] input: text='Hello'
+[2022-09-18 13:09:37,366] ERROR [8228-140326023513920] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://localhost:8080/api/v1/predict",
+    "headers": "Headers({'host': 'localhost:8080', 'connection': 'keep-alive', 'content-length': '21', 'sec-ch-ua': '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"Windows\"', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2022-09-18 13:09:37,374] INFO [8228-140326023513920] 127.0.0.1:35496 - "POST /api/v1/predict HTTP/1.1" 500
+[2022-09-18 13:09:37,375] ERROR [8228-140326023513920] Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 385, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/lib/python3/dist-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 91, in do_predict
+    # run model inference
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/predict.py", line 54, in predict
+    def predict(package: dict, text: str) -> str:
+TypeError: preprocess() missing 1 required positional argument: 'text'
+[2022-09-18 13:09:57,550] INFO [8228-140324168222464] API predict called
+[2022-09-18 13:09:57,551] INFO [8228-140324168222464] input: text='Hello'
+[2022-09-18 13:09:57,551] ERROR [8228-140326023513920] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://localhost:8080/api/v1/predict",
+    "headers": "Headers({'host': 'localhost:8080', 'connection': 'keep-alive', 'content-length': '21', 'sec-ch-ua': '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"Windows\"', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2022-09-18 13:09:57,560] INFO [8228-140326023513920] 127.0.0.1:35498 - "POST /api/v1/predict HTTP/1.1" 500
+[2022-09-18 13:09:57,561] ERROR [8228-140326023513920] Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/httptools_impl.py", line 385, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/lib/python3/dist-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/home/israa04/.local/lib/python3.8/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/israa04/.local/lib/python3.8/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/main.py", line 91, in do_predict
+    # run model inference
+  File "/mnt/c/Users/israa/Desktop/Polysis/app/predict.py", line 54, in predict
+    def predict(package: dict, text: str) -> str:
+TypeError: preprocess() missing 1 required positional argument: 'text'
+[2022-09-18 13:16:44,714] INFO [8220-140326023513920] Shutting down
+[2022-09-18 13:16:44,787] INFO [8228-140326023513920] Shutting down
+[2022-09-18 13:16:44,816] INFO [8220-140326023513920] Waiting for application shutdown.
+[2022-09-18 13:16:44,817] INFO [8220-140326023513920] Application shutdown complete.
+[2022-09-18 13:16:44,817] INFO [8220-140326023513920] Finished server process [8220]
+[2022-09-18 13:16:44,889] INFO [8228-140326023513920] Waiting for application shutdown.
+[2022-09-18 13:16:44,890] INFO [8228-140326023513920] Application shutdown complete.
+[2022-09-18 13:16:44,891] INFO [8228-140326023513920] Finished server process [8228]
+[2022-09-18 13:16:50,141] INFO [8249-140245073483584] Running envirnoment: development
+[2022-09-18 13:16:50,141] INFO [8249-140245073483584] PyTorch using device: cuda
+[2022-09-18 13:17:47,450] INFO [8249-140245073483584] 127.0.0.1:35504 - "GET /docs HTTP/1.1" 200
+[2022-09-18 13:17:47,670] INFO [8249-140245073483584] 127.0.0.1:35504 - "GET /openapi.json HTTP/1.1" 200
+[2022-09-18 13:18:03,638] INFO [8249-140244907259648] API predict called
+[2022-09-18 13:18:03,639] INFO [8249-140244907259648] input: text='John ate an apple'
+[2022-09-18 13:18:03,640] ERROR [8249-140245073483584] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://localhost:8080/api/v1/predict",
+    "headers": "Headers({'host': 'localhost:8080', 'connection': 'keep-alive', 'content-length': '33', 'sec-ch-ua': '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"Windows\"', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2022-09-18 13:18:03,645] INFO [8249-140245073483584] 127.0.0.1:35506 - "POST /api/v1/predict HTTP/1.1" 500
+[2022-09-18 13:18:19,673] INFO [8262-139764691912512] Running envirnoment: development
+[2022-09-18 13:18:19,673] INFO [8262-139764691912512] PyTorch using device: cuda
+[2022-09-18 13:18:31,814] INFO [8262-139764525688576] API predict called
+[2022-09-18 13:18:31,815] INFO [8262-139764525688576] input: text='John ate an apple'
+[2022-09-18 13:18:31,823] ERROR [8262-139764691912512] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://localhost:8080/api/v1/predict",
+    "headers": "Headers({'host': 'localhost:8080', 'connection': 'keep-alive', 'content-length': '33', 'sec-ch-ua': '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"Windows\"', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2022-09-18 13:18:31,835] INFO [8262-139764691912512] 127.0.0.1:35514 - "POST /api/v1/predict HTTP/1.1" 500
+[2022-09-18 13:18:53,204] INFO [8275-139735381788480] Running envirnoment: development
+[2022-09-18 13:18:53,204] INFO [8275-139735381788480] PyTorch using device: cuda
+[2022-09-18 13:19:02,393] INFO [8275-139735215564544] API predict called
+[2022-09-18 13:19:02,394] INFO [8275-139735215564544] input: text='John ate an apple'
+[2022-09-18 13:19:02,804] INFO [8275-139735215564544] results: {'score': 'Low'}
+[2022-09-18 13:19:02,806] ERROR [8275-139735381788480] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://localhost:8080/api/v1/predict",
+    "headers": "Headers({'host': 'localhost:8080', 'connection': 'keep-alive', 'content-length': '33', 'sec-ch-ua': '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"Windows\"', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2022-09-18 13:19:02,807] INFO [8275-139735381788480] 127.0.0.1:35522 - "POST /api/v1/predict HTTP/1.1" 500
+[2022-09-18 13:19:47,857] INFO [8291-139772048414528] Running envirnoment: development
+[2022-09-18 13:19:47,857] INFO [8291-139772048414528] PyTorch using device: cuda
+[2022-09-18 13:19:58,177] INFO [8291-139771882190592] API predict called
+[2022-09-18 13:19:58,179] INFO [8291-139771882190592] input: text='John ate an apple'
+[2022-09-18 13:19:58,656] INFO [8291-139771882190592] results: Low
+[2022-09-18 13:19:58,657] ERROR [8291-139772048414528] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://localhost:8080/api/v1/predict",
+    "headers": "Headers({'host': 'localhost:8080', 'connection': 'keep-alive', 'content-length': '33', 'sec-ch-ua': '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"Windows\"', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2022-09-18 13:19:58,659] INFO [8291-139772048414528] 127.0.0.1:35530 - "POST /api/v1/predict HTTP/1.1" 500
+[2022-09-18 13:20:27,469] INFO [8307-140082052966208] Running envirnoment: development
+[2022-09-18 13:20:27,470] INFO [8307-140082052966208] PyTorch using device: cuda
+[2022-09-18 13:20:46,427] INFO [8307-140081920296704] API predict called
+[2022-09-18 13:20:46,429] INFO [8307-140081920296704] input: text='John ate an apple'
+[2022-09-18 13:20:46,818] INFO [8307-140081920296704] results: Low
+[2022-09-18 13:20:46,819] ERROR [8307-140082052966208] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://localhost:8080/api/v1/predict",
+    "headers": "Headers({'host': 'localhost:8080', 'connection': 'keep-alive', 'content-length': '33', 'sec-ch-ua': '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"Windows\"', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2022-09-18 13:20:46,820] INFO [8307-140082052966208] 127.0.0.1:35538 - "POST /api/v1/predict HTTP/1.1" 500
+[2022-09-18 13:22:03,293] INFO [8323-139973282010944] Running envirnoment: development
+[2022-09-18 13:22:03,294] INFO [8323-139973282010944] PyTorch using device: cuda
+[2022-09-18 13:22:10,246] INFO [8323-139973115787008] API predict called
+[2022-09-18 13:22:10,246] INFO [8323-139973115787008] input: text='John ate an apple'
+[2022-09-18 13:22:10,606] INFO [8323-139973115787008] pred: Low
+[2022-09-18 13:22:10,606] INFO [8323-139973115787008] results: Low
+[2022-09-18 13:22:10,607] ERROR [8323-139973282010944] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://localhost:8080/api/v1/predict",
+    "headers": "Headers({'host': 'localhost:8080', 'connection': 'keep-alive', 'content-length': '33', 'sec-ch-ua': '\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"Windows\"', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2022-09-18 13:22:10,608] INFO [8323-139973282010944] 127.0.0.1:35546 - "POST /api/v1/predict HTTP/1.1" 500
+[2022-09-18 13:23:54,433] INFO [8339-140127845193536] Running envirnoment: development
+[2022-09-18 13:23:54,434] INFO [8339-140127845193536] PyTorch using device: cuda
+[2022-09-18 13:24:01,018] INFO [8339-140127678969600] API predict called
+[2022-09-18 13:24:01,018] INFO [8339-140127678969600] input: text='John ate an apple'
+[2022-09-18 13:24:01,379] INFO [8339-140127678969600] results: {'pred': 'Low'}
+[2022-09-18 13:24:01,381] INFO [8339-140127845193536] 127.0.0.1:35554 - "POST /api/v1/predict HTTP/1.1" 200
+[2022-09-18 13:24:18,808] INFO [8358-140218427307840] Running envirnoment: development
+[2022-09-18 13:24:18,808] INFO [8358-140218427307840] PyTorch using device: cuda
+[2022-09-18 13:25:06,841] INFO [8358-140218261083904] API predict called
+[2022-09-18 13:25:06,842] INFO [8358-140218261083904] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions, ie. success fees.  Apparently, this may have started due to rumors that the London Receiver is allowing for such payments--for example, the pending Arcos turbine sale.  This is unsubstantiated, but may be worthy of inquiry.  Accordingly, in at least one domestic example, it is my understanding that the deal team was fairly unmotivated until they heard about the London arrangement and are now pursuing with great exuberance.  Maybe this is a good thing, but clearly an arrangement that needs to be vetted and then communicated so people understand what the rules may be.'
+[2022-09-18 13:25:07,240] INFO [8358-140218261083904] results: {'pred': 'High'}
+[2022-09-18 13:25:07,242] INFO [8358-140218427307840] 127.0.0.1:35562 - "POST /api/v1/predict HTTP/1.1" 200
+[2022-09-18 13:25:36,120] INFO [8358-140218427307840] 127.0.0.1:35564 - "POST /api/v1/predict HTTP/1.1" 422
+[2022-09-18 13:26:03,940] INFO [8358-140218427307840] 127.0.0.1:35566 - "POST /api/v1/predict HTTP/1.1" 422
+[2022-09-18 13:26:24,958] INFO [8358-140218427307840] 127.0.0.1:35568 - "POST /api/v1/predict HTTP/1.1" 422
+[2022-09-18 13:26:34,583] INFO [8358-140218261083904] API predict called
+[2022-09-18 13:26:34,585] INFO [8358-140218261083904] input: text="In an effort to keep things consistent at UBS we have tried to perfect a roll spreadsheet that all regions should use.  We added extra rolls so we should never have to add rolls.  We have saved copies for our new PandL's in (this will be out new regions file until further notice. Can you copy one of those files and use that as your new PandL's?  Let me know if you see a problem in doing that.  We are trying to start linking up all new PandL's to the DPR, can you save yours out to that file when you are ready."
+[2022-09-18 13:26:34,900] INFO [8358-140218261083904] results: {'pred': 'Low'}
+[2022-09-18 13:26:34,901] INFO [8358-140218427307840] 127.0.0.1:35570 - "POST /api/v1/predict HTTP/1.1" 200
+[2022-09-19 09:32:18,535] INFO [639-140228649850688] Will watch for changes in these directories: ['/mnt/c/Users/israa/Desktop/cohysis/app']
+[2022-09-19 09:32:18,536] INFO [639-140228649850688] Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+[2022-09-19 09:32:18,536] INFO [639-140228649850688] Started reloader process [639] using statreload
+[2022-09-19 09:32:24,399] INFO [641-139983801395008] Started server process [641]
+[2022-09-19 09:32:24,409] INFO [641-139983801395008] Waiting for application startup.
+[2022-09-19 09:32:24,411] INFO [641-139983801395008] Running envirnoment: development
+[2022-09-19 09:32:24,413] INFO [641-139983801395008] PyTorch using device: cuda
+[2022-09-19 09:32:30,254] ERROR [641-139983801395008] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 621, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 518, in __aenter__
+    await self._router.startup()
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 598, in startup
+    await handler()
+  File "/mnt/c/Users/israa/Desktop/cohysis/app/./main.py", line 63, in startup_event
+    model.load_state_dict(torch.load(
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 699, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/israa04/.local/lib/python3.8/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '../model/BERTSem.pt'
+
+[2022-09-19 09:32:30,301] ERROR [641-139983801395008] Application startup failed. Exiting.
+[2022-09-19 09:32:51,649] INFO [639-140228649850688] Stopping reloader process [639]
+[2022-09-19 09:32:52,995] INFO [653-140608380315456] Will watch for changes in these directories: ['/mnt/c/Users/israa/Desktop/cohysis/app']
+[2022-09-19 09:32:52,996] INFO [653-140608380315456] Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+[2022-09-19 09:32:52,997] INFO [653-140608380315456] Started reloader process [653] using statreload
+[2022-09-19 09:32:55,840] INFO [655-140450170840896] Started server process [655]
+[2022-09-19 09:32:55,841] INFO [655-140450170840896] Waiting for application startup.
+[2022-09-19 09:32:55,842] INFO [655-140450170840896] Running envirnoment: development
+[2022-09-19 09:32:55,842] INFO [655-140450170840896] PyTorch using device: cuda
+[2022-09-19 09:33:05,011] INFO [655-140450170840896] Application startup complete.
+[2022-09-19 09:36:58,710] INFO [655-140450170840896] Shutting down
+[2022-09-19 09:36:58,811] INFO [655-140450170840896] Finished server process [655]
+[2022-09-19 09:36:58,824] ERROR [655-140450170840896] Traceback (most recent call last):
+  File "/home/israa04/.local/lib/python3.8/site-packages/starlette/routing.py", line 624, in lifespan
+    await receive()
+  File "/home/israa04/.local/lib/python3.8/site-packages/uvicorn/middleware/message_logger.py", line 58, in inner_receive
+    message = await receive()
+  File "/home/israa04/.local/lib/python3.8/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/usr/lib/python3.8/asyncio/queues.py", line 163, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+[2022-09-19 09:36:59,640] INFO [653-140608380315456] Stopping reloader process [653]
+[2022-09-21 11:43:11,674] INFO [13756-3484] Will watch for changes in these directories: ['C:\\Users\\israa\\Desktop\\cohysis\\app']
+[2022-09-21 11:43:11,675] INFO [13756-3484] Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2022-09-21 11:43:11,679] INFO [13756-3484] Started reloader process [13756] using watchgod
+[2022-09-21 11:43:14,391] WARNING [11692-8352] The --reload flag should not be used in production on Windows.
+[2022-09-21 11:43:14,468] INFO [11692-8352] Started server process [11692]
+[2022-09-21 11:43:14,468] INFO [11692-8352] Waiting for application startup.
+[2022-09-21 11:43:14,469] INFO [11692-8352] Running envirnoment: development
+[2022-09-21 11:43:14,470] INFO [11692-8352] PyTorch using device: cpu
+[2022-09-21 11:43:22,253] INFO [11692-8352] Application startup complete.
+[2022-09-21 11:43:35,693] INFO [11692-8352] 127.0.0.1:54251 - "OPTIONS /evaluate/ HTTP/1.1" 400
+[2022-09-21 12:11:44,520] INFO [11692-8352] 127.0.0.1:54683 - "OPTIONS /evaluate/ HTTP/1.1" 400
+[2022-09-21 14:46:40,556] WARNING [13756-3484] WatchGodReload detected file change in '['C:\\Users\\israa\\Desktop\\cohysis\\app\\main.py']'. Reloading...
+[2022-09-21 14:46:44,832] WARNING [18544-17192] The --reload flag should not be used in production on Windows.
+[2022-09-21 14:46:44,880] INFO [18544-17192] Started server process [18544]
+[2022-09-21 14:46:44,881] INFO [18544-17192] Waiting for application startup.
+[2022-09-21 14:46:44,882] INFO [18544-17192] Running envirnoment: development
+[2022-09-21 14:46:44,882] INFO [18544-17192] PyTorch using device: cpu
+[2022-09-21 14:46:53,089] INFO [18544-17192] Application startup complete.
+[2022-09-21 14:47:27,210] INFO [18544-17192] 127.0.0.1:49733 - "OPTIONS /evaluate/ HTTP/1.1" 400
+[2022-09-21 14:48:49,144] WARNING [13756-3484] WatchGodReload detected file change in '['C:\\Users\\israa\\Desktop\\cohysis\\app\\main.py']'. Reloading...
+[2022-09-21 14:48:53,720] WARNING [12908-18796] The --reload flag should not be used in production on Windows.
+[2022-09-21 14:48:53,772] INFO [12908-18796] Started server process [12908]
+[2022-09-21 14:48:53,773] INFO [12908-18796] Waiting for application startup.
+[2022-09-21 14:48:53,774] INFO [12908-18796] Running envirnoment: development
+[2022-09-21 14:48:53,774] INFO [12908-18796] PyTorch using device: cpu
+[2022-09-21 14:49:00,477] INFO [12908-18796] Application startup complete.
+[2022-09-21 14:49:04,505] INFO [12908-18796] 127.0.0.1:49803 - "OPTIONS /evaluate/ HTTP/1.1" 200
+[2022-09-21 14:49:04,512] INFO [12908-18796] 127.0.0.1:49803 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 14:49:04,520] INFO [12908-18796] 127.0.0.1:49803 - "OPTIONS /evaluate HTTP/1.1" 200
+[2022-09-21 14:49:04,555] INFO [12908-14712] API predict called
+[2022-09-21 14:49:04,557] INFO [12908-14712] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions, ie. success fees.  Apparently, this may have started due to "rumors" that the London Receiver is allowing for such payments--for example, the pending Arcos turbine sale.  This is unsubstantiated, but may be worthy of inquiry.  Accordingly, in at least one domestic example, it is my understanding that the deal team was fairly unmotivated until they heard about the London "arrangement" and are now pursuing with great exuberance.  Maybe this is a good thing, but clearly an arrangement that needs to be vetted and then communicated so people understand what the "rules" may be.'
+[2022-09-21 14:49:05,213] INFO [12908-14712] results: {'pred': 'High'}
+[2022-09-21 14:49:05,215] INFO [12908-18796] 127.0.0.1:49803 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 14:49:05,480] INFO [12908-18796] 127.0.0.1:49803 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 14:49:05,484] INFO [12908-14712] API predict called
+[2022-09-21 14:49:05,484] INFO [12908-14712] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions, ie. success fees.  Apparently, this may have started due to "rumors" that the London Receiver is allowing for such payments--for example, the pending Arcos turbine sale.  This is unsubstantiated, but may be worthy of inquiry.  Accordingly, in at least one domestic example, it is my understanding that the deal team was fairly unmotivated until they heard about the London "arrangement" and are now pursuing with great exuberance.  Maybe this is a good thing, but clearly an arrangement that needs to be vetted and then communicated so people understand what the "rules" may be.'
+[2022-09-21 14:49:05,964] INFO [12908-14712] results: {'pred': 'High'}
+[2022-09-21 14:49:05,965] INFO [12908-18796] 127.0.0.1:49807 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 14:49:17,077] INFO [12908-18796] 127.0.0.1:49808 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 14:49:17,083] INFO [12908-14712] API predict called
+[2022-09-21 14:49:17,083] INFO [12908-14712] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions, ie. success fees.  Apparently, this may have started due to "rumors" that the London Receiver is allowing for such payments--for example, the pending Arcos turbine sale.  This is unsubstantiated, but may be worthy of inquiry.  Accordingly, in at least one domestic example, it is my understanding that the deal team was fairly unmotivated until they heard about the London "arrangement" and are now pursuing with great exuberance.  Maybe this is a good thing, but clearly an arrangement that needs to be vetted and then communicated so people understand what the "rules" may be.'
+[2022-09-21 14:49:17,570] INFO [12908-14712] results: {'pred': 'High'}
+[2022-09-21 14:49:17,571] INFO [12908-18796] 127.0.0.1:49809 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 14:49:18,157] INFO [12908-18796] 127.0.0.1:49809 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 14:49:18,162] INFO [12908-14712] API predict called
+[2022-09-21 14:49:18,163] INFO [12908-14712] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions, ie. success fees.  Apparently, this may have started due to "rumors" that the London Receiver is allowing for such payments--for example, the pending Arcos turbine sale.  This is unsubstantiated, but may be worthy of inquiry.  Accordingly, in at least one domestic example, it is my understanding that the deal team was fairly unmotivated until they heard about the London "arrangement" and are now pursuing with great exuberance.  Maybe this is a good thing, but clearly an arrangement that needs to be vetted and then communicated so people understand what the "rules" may be.'
+[2022-09-21 14:49:18,644] INFO [12908-14712] results: {'pred': 'High'}
+[2022-09-21 14:49:18,646] INFO [12908-18796] 127.0.0.1:49808 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 14:51:34,039] INFO [12908-18796] 127.0.0.1:49898 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 14:51:34,048] INFO [12908-14712] API predict called
+[2022-09-21 14:51:34,050] INFO [12908-14712] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions, ie. success fees.  Apparently, this may have started due to "rumors" that the London Receiver is allowing for such payments--for example, the pending Arcos turbine sale.  This is unsubstantiated, but may be worthy of inquiry.  Accordingly, in at least one domestic example, it is my understanding that the deal team was fairly unmotivated until they heard about the London "arrangement" and are now pursuing with great exuberance.  Maybe this is a good thing, but clearly an arrangement that needs to be vetted and then communicated so people understand what the "rules" may be.'
+[2022-09-21 14:51:34,571] INFO [12908-14712] results: {'pred': 'High'}
+[2022-09-21 14:51:34,572] INFO [12908-18796] 127.0.0.1:49898 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 15:03:49,719] INFO [12908-18796] 127.0.0.1:50406 - "OPTIONS /evaluate/ HTTP/1.1" 200
+[2022-09-21 15:03:49,725] INFO [12908-18796] 127.0.0.1:50406 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 15:03:49,733] INFO [12908-18796] 127.0.0.1:50406 - "OPTIONS /evaluate HTTP/1.1" 200
+[2022-09-21 15:03:49,741] INFO [12908-14712] API predict called
+[2022-09-21 15:03:49,742] INFO [12908-14712] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions, ie. success fees.  Apparently, this may have started due to "rumors" that the London Receiver is allowing for such payments--for example, the pending Arcos turbine sale.  This is unsubstantiated, but may be worthy of inquiry.  Accordingly, in at least one domestic example, it is my understanding that the deal team was fairly unmotivated until they heard about the London "arrangement" and are now pursuing with great exuberance.  Maybe this is a good thing, but clearly an arrangement that needs to be vetted and then communicated so people understand what the "rules" may be.'
+[2022-09-21 15:03:50,268] INFO [12908-14712] results: {'pred': 'High'}
+[2022-09-21 15:03:50,269] INFO [12908-18796] 127.0.0.1:50406 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 15:05:48,426] INFO [12908-18796] 127.0.0.1:50481 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 15:05:48,430] INFO [12908-14712] API predict called
+[2022-09-21 15:05:48,431] INFO [12908-14712] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions, ie. success fees.  Apparently, this may have started due to "rumors" that the London Receiver is allowing for such payments--for example, the pending Arcos turbine sale.  This is unsubstantiated, but may be worthy of inquiry.  Accordingly, in at least one domestic example, it is my understanding that the deal team was fairly unmotivated until they heard about the London "arrangement" and are now pursuing with great exuberance.  Maybe this is a good thing, but clearly an arrangement that needs to be vetted and then communicated so people understand what the "rules" may be.'
+[2022-09-21 15:05:48,902] INFO [12908-14712] results: {'pred': 'High'}
+[2022-09-21 15:05:48,903] INFO [12908-18796] 127.0.0.1:50481 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 15:05:58,504] INFO [12908-18796] 127.0.0.1:50484 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 15:05:58,516] INFO [12908-14712] API predict called
+[2022-09-21 15:05:58,517] INFO [12908-14712] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions, ie. success fees.  Apparently, this may have started due to "rumors" that the London Receiver is allowing for such payments--for example, the pending Arcos turbine sale.  This is unsubstantiated, but may be worthy of inquiry.  Accordingly, in at least one domestic example, it is my understanding that the deal team was fairly unmotivated until they heard about the London "arrangement" and are now pursuing with great exuberance.  Maybe this is a good thing, but clearly an arrangement that needs to be vetted and then communicated so people understand what the "rules" may be.'
+[2022-09-21 15:05:59,003] INFO [12908-14712] results: {'pred': 'High'}
+[2022-09-21 15:05:59,005] INFO [12908-18796] 127.0.0.1:50485 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 15:14:12,396] INFO [12908-18796] 127.0.0.1:50619 - "OPTIONS /evaluate/ HTTP/1.1" 200
+[2022-09-21 15:14:12,398] INFO [12908-18796] 127.0.0.1:50619 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 15:14:12,401] INFO [12908-18796] 127.0.0.1:50619 - "OPTIONS /evaluate HTTP/1.1" 200
+[2022-09-21 15:14:12,403] INFO [12908-14712] API predict called
+[2022-09-21 15:14:12,405] INFO [12908-14712] input: text='Mark and Jeff: There is an impression circulating among some of the commercial teams that their compensation may be directly linked to asset dispositions, ie. success fees.  Apparently, this may have started due to "rumors" that the London Receiver is allowing for such payments--for example, the pending Arcos turbine sale.  This is unsubstantiated, but may be worthy of inquiry.  Accordingly, in at least one domestic example, it is my understanding that the deal team was fairly unmotivated until they heard about the London "arrangement" and are now pursuing with great exuberance.  Maybe this is a good thing, but clearly an arrangement that needs to be vetted and then communicated so people understand what the "rules" may be.'
+[2022-09-21 15:14:12,889] INFO [12908-14712] results: {'pred': 'High'}
+[2022-09-21 15:14:12,890] INFO [12908-18796] 127.0.0.1:50619 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 15:14:24,252] INFO [12908-18796] 127.0.0.1:50623 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 15:14:24,279] INFO [12908-14712] API predict called
+[2022-09-21 15:14:24,279] INFO [12908-14712] input: text="Brian,\n\nIn an effort to keep things consistent at UBS we have tried to perfect a roll spreadsheet that all regions should use.  We added extra rolls so we should never have to add rolls.  We have saved copies for our new P&L's in O:erms\\erms_adm\\netco\\2002\\0102\\Regions0102 (this will be out new regions file until further notice.\n\nCan you copy one of those files and use that as your new P&L's?  Let me know if you see a problem in doing that.  We are trying to start linking up all new P&L's to the DPR, can you save yours out to that file when you are ready."
+[2022-09-21 15:14:24,802] INFO [12908-14712] results: {'pred': 'Low'}
+[2022-09-21 15:14:24,803] INFO [12908-18796] 127.0.0.1:50624 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 15:16:16,395] INFO [12908-18796] 127.0.0.1:50659 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 15:16:16,403] INFO [12908-14712] API predict called
+[2022-09-21 15:16:16,404] INFO [12908-14712] input: text='SPP is joining MISO and today MISO said that the merger should be filed at FERC 1Q02.  MISO also told FERC that the same congestion management systems would be used in SPP/MISO, so no seams.  Since MISO is moving toward the market design we want, then really it seems that SPP should be implementing the MISO system for Day1 (which may well be up 12/15/01) and should be right in line with MISO on Day 2 issues (that we like).\n\nHowever, FERC should not approve SPP as an RTO until it is in with MISO.  I don\'t see that FERC needs to approve SPP as an RTO in order to allow SPP to finish work on a wholesale energy system because presumably SPP will be using MISO\'s system.  This summer FERC told SPP to not spend more $ since it was not an RTO yet and it was going off on its own merry way.  Therefore, FERC could say "use MISO\'s system and specify exactly the minimum that needs to be done on systems in order to have the TX retail settlements done.  This should be done consistent with the no seams, as represented by MISO."  That should satisfy Texas PUC concerns.'
+[2022-09-21 15:16:16,843] INFO [12908-14712] results: {'pred': 'Medium'}
+[2022-09-21 15:16:16,844] INFO [12908-18796] 127.0.0.1:50659 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 15:22:14,594] INFO [12908-18796] 127.0.0.1:50798 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 15:22:14,599] INFO [12908-14712] API predict called
+[2022-09-21 15:22:14,600] INFO [12908-14712] input: text='SPP is joining MISO and today MISO said that the merger should be filed at FERC 1Q02.  MISO also told FERC that the same congestion management systems would be used in SPP/MISO, so no seams.  Since MISO is moving toward the market design we want, then really it seems that SPP should be implementing the MISO system for Day1 (which may well be up 12/15/01) and should be right in line with MISO on Day 2 issues (that we like).\n\nHowever, FERC should not approve SPP as an RTO until it is in with MISO.  I don\'t see that FERC needs to approve SPP as an RTO in order to allow SPP to finish work on a wholesale energy system because presumably SPP will be using MISO\'s system.  This summer FERC told SPP to not spend more $ since it was not an RTO yet and it was going off on its own merry way.  Therefore, FERC could say "use MISO\'s system and specify exactly the minimum that needs to be done on systems in order to have the TX retail settlements done.  This should be done consistent with the no seams, as represented by MISO."  That should satisfy Texas PUC concerns.'
+[2022-09-21 15:22:15,082] INFO [12908-14712] results: {'pred': 'Medium'}
+[2022-09-21 15:22:15,083] INFO [12908-18796] 127.0.0.1:50798 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 16:05:08,868] INFO [12908-18796] 127.0.0.1:51196 - "OPTIONS /evaluate/ HTTP/1.1" 200
+[2022-09-21 16:05:08,870] INFO [12908-18796] 127.0.0.1:51196 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 16:05:08,873] INFO [12908-18796] 127.0.0.1:51196 - "OPTIONS /evaluate HTTP/1.1" 200
+[2022-09-21 16:05:08,876] INFO [12908-14712] API predict called
+[2022-09-21 16:05:08,877] INFO [12908-14712] input: text='SPP is joining MISO and today MISO said that the merger should be filed at FERC 1Q02.  MISO also told FERC that the same congestion management systems would be used in SPP/MISO, so no seams.  Since MISO is moving toward the market design we want, then really it seems that SPP should be implementing the MISO system for Day1 (which may well be up 12/15/01) and should be right in line with MISO on Day 2 issues (that we like).\n\nHowever, FERC should not approve SPP as an RTO until it is in with MISO.  I don\'t see that FERC needs to approve SPP as an RTO in order to allow SPP to finish work on a wholesale energy system because presumably SPP will be using MISO\'s system.  This summer FERC told SPP to not spend more $ since it was not an RTO yet and it was going off on its own merry way.  Therefore, FERC could say "use MISO\'s system and specify exactly the minimum that needs to be done on systems in order to have the TX retail settlements done.  This should be done consistent with the no seams, as represented by MISO."  That should satisfy Texas PUC concerns.'
+[2022-09-21 16:05:09,331] INFO [12908-14712] results: {'pred': 'Medium'}
+[2022-09-21 16:05:09,333] INFO [12908-18796] 127.0.0.1:51196 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 16:10:34,046] INFO [12908-18796] 127.0.0.1:51284 - "POST /evaluate/ HTTP/1.1" 307
+[2022-09-21 16:10:34,054] INFO [12908-14712] API predict called
+[2022-09-21 16:10:34,054] INFO [12908-14712] input: text='SPP is joining MISO and today MISO said that the merger should be filed at FERC 1Q02.  MISO also told FERC that the same congestion management systems would be used in SPP/MISO, so no seams.  Since MISO is moving toward the market design we want, then really it seems that SPP should be implementing the MISO system for Day1 (which may well be up 12/15/01) and should be right in line with MISO on Day 2 issues (that we like).\n\nHowever, FERC should not approve SPP as an RTO until it is in with MISO.  I don\'t see that FERC needs to approve SPP as an RTO in order to allow SPP to finish work on a wholesale energy system because presumably SPP will be using MISO\'s system.  This summer FERC told SPP to not spend more $ since it was not an RTO yet and it was going off on its own merry way.  Therefore, FERC could say "use MISO\'s system and specify exactly the minimum that needs to be done on systems in order to have the TX retail settlements done.  This should be done consistent with the no seams, as represented by MISO."  That should satisfy Texas PUC concerns.'
+[2022-09-21 16:10:34,528] INFO [12908-14712] results: {'pred': 'Medium'}
+[2022-09-21 16:10:34,530] INFO [12908-18796] 127.0.0.1:51284 - "POST /evaluate HTTP/1.1" 200
+[2022-09-21 16:19:28,572] INFO [12908-18796] Shutting down
+[2022-09-21 16:19:28,682] INFO [12908-18796] Waiting for application shutdown.
+[2022-09-21 16:19:28,684] INFO [12908-18796] Application shutdown complete.
+[2022-09-21 16:19:28,686] INFO [12908-18796] Finished server process [12908]
+[2022-09-21 16:19:28,860] INFO [13756-3484] Stopping reloader process [13756]

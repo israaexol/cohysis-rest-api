@@ -1,0 +1,15 @@
+{
+    "BERT_MODEL": "bert-base-uncased",
+    "MODEL_PATH": "../model/BERTSem.pt",
+    "COH_CLASS_NAMES": [
+        "Low",
+        "Medium",
+        "High"
+    ],
+    "SA_CLASS_NAMES": [
+        "Negative",
+        "Neutral",
+        "Positive"
+    ],
+    "MAX_SEQUENCE_LENGTH": 250
+}
