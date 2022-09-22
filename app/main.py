@@ -5,7 +5,6 @@ import os
 import sys
 import traceback
 import json
-from joblib import load
 from transformers import BertTokenizer
 from BERTSem import BERTSem
 
